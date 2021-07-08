@@ -1,9 +1,9 @@
   const express = require("express");
   const mongoose = require("mongoose");
-  const port = process.env.PORT || 5000;
+  const port = process.env.MONGODB_URI || 5000;
   const app = express();
 
-  mongoose.connect('mongodb+srv://BlogApp:safwanchpu@cluster0.y4ubm.mongodb.net/myapp?retryWrites=true&w=majority', {
+  mongoose.connect(port, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
