@@ -2,8 +2,8 @@
   const mongoose = require("mongoose");
   const port = process.env.MONGODB_URI || 5000;
   const app = express();
-
-  mongoose.connect(port, {
+const uri="mongodb+srv://BlogApp:safwanchpu@cluster0.y4ubm.mongodb.net/myapp?retryWrites=true&w=majority";
+  mongoose.connect(uri, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
