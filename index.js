@@ -3,11 +3,11 @@
   const port = process.env.PORT || 5000;
   const app = express();
 
-//   mongoose.connect('mongodb+srv://BlogApp:safwanchpu@cluster0.y4ubm.mongodb.net/myapp?retryWrites=true&w=majority', {
-//       useNewUrlParser: true,
-//       useCreateIndex: true,
-//       useUnifiedTopology: true,
-//     });
+  mongoose.connect('mongodb+srv://BlogApp:safwanchpu@cluster0.y4ubm.mongodb.net/myapp?retryWrites=true&w=majority', {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useUnifiedTopology: true,
+    });
 
   const connection = mongoose.connection;
 
