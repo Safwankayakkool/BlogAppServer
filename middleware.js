@@ -17,7 +17,7 @@ let checkToken = (req, res, next) => {
                 req.decoded = decoded;
                 next();
             }
-        });
+        }); 
     }
     else {
         return res.json({
